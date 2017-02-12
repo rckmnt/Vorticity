@@ -5,6 +5,7 @@ ehthumbs.db
 # 3D Files
 *.stl
 *.3dm
+*.3dmbak
 *.fbx
 *.obj
 
