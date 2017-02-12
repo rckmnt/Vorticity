@@ -1,0 +1,145 @@
+{
+  "Header": {
+    "SPLVersion": "8.0",
+    "ClientName": "",
+    "ClientVersion": "",
+    "SimplygonVersion": ""
+  },
+  "ProcessGraph": {
+    "Type": "ContainerNode",
+    "Name": "Node",
+    "Children": [
+      {
+        "Processor": {
+          "ReductionSettings": {
+            "AllowDegenerateTexCoords": true,
+            "CreateGeomorphGeometry": false,
+            "DataCreationPreferences": "SG_DATACREATIONPREFERENCES_PREFER_OPTIMIZED_RESULT",
+            "EdgeSetImportance": 1.0,
+            "GenerateGeomorphData": false,
+            "GeometryImportance": 1.0,
+            "GroupImportance": 1.0,
+            "InwardMoveMultiplier": 1.0,
+            "KeepSymmetry": false,
+            "MaterialImportance": 1.0,
+            "MaxDeviation": 0.0,
+            "MaxEdgeLength": 2147483647.0,
+            "OnScreenSize": 300,
+            "OutwardMoveMultiplier": 1.0,
+            "ProcessSelectionSetName": "",
+            "ReductionHeuristics": "SG_REDUCTIONHEURISTICS_CONSISTENT",
+            "ReductionTargets": "SG_REDUCTIONTARGET_TRIANGLERATIO",
+            "ShadingImportance": 1.0,
+            "SkinningImportance": 1.0,
+            "StopCondition": "SG_STOPCONDITION_ALL",
+            "SymmetryAxis": 0,
+            "SymmetryDetectionTolerance": 0.0004,
+            "SymmetryOffset": 0.0,
+            "TextureImportance": 1.0,
+            "TriangleCount": 2147483647,
+            "TriangleRatio": 0.05,
+            "UseAutomaticSymmetryDetection": false,
+            "UseHighQualityNormalCalculation": true,
+            "UseSymmetryQuadRetriangulator": true,
+            "UseVertexWeights": false,
+            "VertexColorImportance": 1.0,
+            "Enabled": true
+          },
+          "MappingImageSettings": {
+            "AllowTransparencyMapping": true,
+            "AutomaticTextureSizeMultiplier": 1.0,
+            "ChartAggregatorMode": "SG_CHARTAGGREGATORMODE_TEXTURESIZEPROPORTIONS",
+            "ChartAggregatorOriginalChartProportionsChannel": "Diffuse",
+            "ChartAggregatorOriginalTexCoordLevel": 0,
+            "ChartAggregatorOriginalTexCoordLevelName": "",
+            "ChartAggregatorSeparateOverlappingCharts": false,
+            "ForcePower2Texture": false,
+            "GenerateMappingImage": true,
+            "GenerateTangents": true,
+            "GenerateTexCoords": true,
+            "GutterSpace": 4,
+            "Height": 512,
+            "MaximumLayers": 3,
+            "MultisamplingLevel": 3,
+            "ParameterizerMaxStretch": 0.12,
+            "TexCoordGeneratorType": "SG_TEXCOORDGENERATORTYPE_CHARTAGGREGATOR",
+            "TexCoordLevel": 255,
+            "UseAutomaticTextureSize": false,
+            "UseFullRetexturing": false,
+            "UseVertexWeights": false,
+            "Width": 512,
+            "Enabled": false
+          },
+          "NormalCalculationSettings": {
+            "DetectPrimitiveNormals": false,
+            "HardEdgeAngleInRadians": 1.3955555555555557,
+            "RepairInvalidNormals": false,
+            "ReplaceNormals": false,
+            "ReplaceTangents": false,
+            "ScaleByAngle": true,
+            "ScaleByArea": true,
+            "Enabled": false
+          },
+          "RepairSettings": {
+            "ProgressivePasses": 3,
+            "TjuncDist": 0.0,
+            "UseTJunctionRemover": false,
+            "UseWelding": true,
+            "WeldDist": 0.0,
+            "WeldOnlyBorderVertices": false,
+            "WeldOnlyObjectBoundary": false,
+            "Enabled": false
+          },
+          "VisibilitySettings": {
+            "CameraSelectionSetName": "",
+            "ConservativeMode": false,
+            "CullOccludedGeometry": false,
+            "FillNonVisibleAreaThreshold": 0.0,
+            "ForceVisibilityCalculation": false,
+            "OccluderSelectionSetName": "",
+            "RemoveTrianglesNotOccludingOtherTriangles": false,
+            "UseBackfaceCulling": true,
+            "UseVisibilityWeightsInReducer": false,
+            "UseVisibilityWeightsInTexcoordGenerator": false,
+            "VisibilityWeightsPower": 1.0,
+            "UseCustomVisibilitySphere": false,
+            "CustomVisibilitySphereFidelity": 4,
+            "CustomVisibilitySphereYaw": 0.0,
+            "CustomVisibilitySpherePitch": 0.0,
+            "CustomVisibilitySphereCoverage": 180.0,
+            "Enabled": false
+          },
+          "BoneSettings": {
+            "BoneCount": 2147483647,
+            "BoneRatio": 0.5,
+            "BoneReductionTargets": "SG_BONEREDUCTIONTARGET_BONERATIO",
+            "LimitBonesPerVertex": false,
+            "LockBoneSelectionSetName": "",
+            "MaxBonePerVertex": 4,
+            "MaxDeviation": 0.0,
+            "OnScreenSize": 300,
+            "RemoveUnusedBones": false,
+            "RemoveBoneSelectionSetName": "",
+            "UseBoneReducer": false,
+            "Enabled": false
+          },
+          "Type": "ReductionProcessor"
+        },
+        "MaterialCaster": [],
+        "OutputMaterialName": "SimplygonMaterial",
+        "DefaultTBNType": "SG_TANGENTSPACEMETHOD_ORTHONORMAL",
+        "AllowGPUAcceleration": false,
+        "Type": "ProcessNode",
+        "Name": "Node0",
+        "Children": [
+          {
+            "Format": "obj",
+            "Type": "WriteNode",
+            "Name": "Output",
+            "Children": []
+          }
+        ]
+      }
+    ]
+  }
+}
