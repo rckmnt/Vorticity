@@ -8,6 +8,7 @@ ehthumbs.db
 *.3dmbak
 *.fbx
 *.obj
+*.3dmbak
 
 # Folder config file
 Desktop.ini

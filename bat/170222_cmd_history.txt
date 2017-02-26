@@ -1,0 +1,562 @@
+---------------------
+MultiMesh Scripting
+---------------------
+
+
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+
+Input Folder Mesh List:
+"input\0_29_1.xxx.stl"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>meshlabserver.exe -i .\input\torus.obj -o .\output\t1_processed.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention obj
+Mesh is Polygonal!
+Mesh C:/multiMeshScripting/input/torus.obj loaded has 400 vn 800 fn
+output mesh  C:/multiMeshScripting/output/t1_processed.stl
+Apply FilterScript: 'C:/multiMeshScripting/scripts/reduce_90.mlx'
+FilterScript
+Reading filter with name Simplification: Quadric Edge Collapse Decimation
+    Reading Param with name TargetFaceNum : RichInt
+    Reading Param with name TargetPerc : RichFloat
+    Reading Param with name QualityThr : RichFloat
+    Reading Param with name PreserveBoundary : RichBool
+    Reading Param with name BoundaryWeight : RichFloat
+    Reading Param with name PreserveNormal : RichBool
+    Reading Param with name PreserveTopology : RichBool
+    Reading Param with name OptimalPlacement : RichBool
+    Reading Param with name PlanarQuadric : RichBool
+    Reading Param with name QualityWeight : RichBool
+    Reading Param with name AutoClean : RichBool
+    Reading Param with name Selected : RichBool
+Starting Script of 1 actionsfilter: Simplification: Quadric Edge Collapse Decimation
+no additional memory available!!! memory required: 19200
+Initializing simplificationMesh C:/multiMeshScripting/input/torus.obj saved as C:/multiMeshScripting/output/t1_processed.stl (40 vn 80 fn)
+
+C:\multiMeshScripting>
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+
+
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+
+Input Folder Mesh List:
+"input\0_29_1.xxx.stl"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_29_1.xxx.stl -o .\output\0_29_1.xxx_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_31_1.stl -o .\output\0_31_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t1.stl -o .\output\t1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t2.stl -o .\output\t2_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+
+
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+
+Input Folder Mesh List:
+"input\0_29_1.xxx.stl"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.xxx.stl"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_29_1.xxx.stl -o .\output\0_29_1.xxx_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_31_1.stl -o .\output\0_31_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t1.stl -o .\output\t1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t2.stl -o .\output\t2_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>
+C:\multiMeshScripting>
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_29_1.stlXXX -o .\output\0_29_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_31_1.stl -o .\output\0_31_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t1.stl -o .\output\t1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t2.stl -o .\output\t2_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+Mesh C:/multiMeshScripting/input/0_30_1.stl loaded has 9010602 vn 3003534 fn
+output mesh  C:/multiMeshScripting/output/0_30_1_post.stl
+Apply FilterScript: 'C:/multiMeshScripting/scripts/reduce_90.mlx'
+FilterScript
+Reading filter with name Simplification: Quadric Edge Collapse Decimation
+    Reading Param with name TargetFaceNum : RichInt
+    Reading Param with name TargetPerc : RichFloat
+    Reading Param with name QualityThr : RichFloat
+    Reading Param with name PreserveBoundary : RichBool
+    Reading Param with name BoundaryWeight : RichFloat
+    Reading Param with name PreserveNormal : RichBool
+    Reading Param with name PreserveTopology : RichBool
+    Reading Param with name OptimalPlacement : RichBool
+    Reading Param with name PlanarQuadric : RichBool
+    Reading Param with name QualityWeight : RichBool
+    Reading Param with name AutoClean : RichBool
+    Reading Param with name Selected : RichBool
+Starting Script of 1 actionsfilter: Simplification: Quadric Edge Collapse Decimation
+no additional memory available!!! memory required: 252296856
+Initializing simplificationLOG: 2 PostSimplification Cleaning: Removed 7506950 duplicated vertices
+PostSimplification Cleaning: Removed 7506950 duplicated vertices
+Mesh C:/multiMeshScripting/input/0_30_1.stl saved as C:/multiMeshScripting/output/0_30_1_post.stl (1503652 vn 3003534 fn)
+
+C:\multiMeshScripting>
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\0_30_1_post.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+'E' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\0_30_1_post.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+do was unexpected at this time.
+C:\multiMeshScripting\input>runMLXScript_scott.bat
+'runMLXScript_scott.bat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+AND was unexpected at this time.
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+(ping was unexpected at this time.
+C:\multiMeshScripting\input>runMLXScript_scott.bat
+'runMLXScript_scott.bat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+timeout was unexpected at this time.
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_29_1.stlXXX -o .\output\0_29_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for  0 seconds, press CTRL+C to quit ...
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for  8 seconds, press CTRL+C to quit ...
+Terminate batch job (Y/N)? y
+
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stlXXX
+Error encountered while opening file: It was not possible to import mesh C:/multiMeshScripting/input/input/0_29_1.stlXXX into MeshLabServer. The program will exit
+
+Waiting for  0 seconds, press CTRL+C to quit ...
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+
+Waiting for  0 seconds, press CTRL+C to quit ...
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+
+Waiting for  0 seconds, press CTRL+C to quit ...
+Loading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+Total 241 filtering actions
+Total 12 io plugins
+Opening a file with extention stl
+
+Waiting for 10 seconds, press CTRL+C to quit ...
+Terminate batch job (Y/N)?
+^CLoading Plugins:
+Current Plugins Dir is: C:/Program Files/VCG/MeshLab/plugins
+^C
+Waiting for  8 seconds, press CTRL+C to quit ...
+Terminate batch job (Y/N)? y
+
+C:\multiMeshScripting\input>cd ..
+
+C:\multiMeshScripting>runMLXScript_scott.bat
+---------------------
+MultiMesh Scripting
+---------------------
+----------------------------------------------------------------
+Processing meshes with the format:  stl
+----------------------------------------------------------------
+Input Folder Mesh List:
+"input\0_29_1.stlXXX"
+"input\0_30_1.stl"
+"input\0_31_1.stl"
+"input\t1.stl"
+"input\t2.stl"
+------------------------------------------------------
+  Running a meshlabserver MLX script on a folder
+----------------------------------------------------------------
+
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_29_1.stlXXX -o .\output\0_29_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for 0 seconds, press CTRL+C to quit ...
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_30_1.stl -o .\output\0_30_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for 0 seconds, press CTRL+C to quit ...
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\0_31_1.stl -o .\output\0_31_1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for 0 seconds, press CTRL+C to quit ...
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t1.stl -o .\output\t1_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for 0 seconds, press CTRL+C to quit ...
+"C:\Program Files\VCG\MeshLab\meshlabserver.exe" -i .\input\t2.stl -o .\output\t2_post.stl -s C:\multiMeshScripting\scripts\reduce_90.mlx
+
+Waiting for 0 seconds, press CTRL+C to quit ...
+
+----------------------------------------------------------------
+
+Output Folder Mesh List:
+"output\0_29_1_processed.stl"
+"output\0_30_1_post.stl"
+"output\t1_processed.stl"
+
+
+Script Complete
+
+Press any key to continue . . .
+
+C:\multiMeshScripting>
