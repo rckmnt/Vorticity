@@ -2,7 +2,7 @@ import rhinoscriptsyntax as rs
 import Rhino.Geometry as rg
 import Rhino, datetime
 
-fileName = "0_29_1"  #rs.DocumentName()
+fileName = "0_29_4"  #rs.DocumentName()
 filePath = rs.DocumentPath().rstrip(fileName)
 
 # Select all mesh objects
@@ -24,7 +24,7 @@ print datetime.datetime.now()
 # For each obj, export as FBX
 def export_all(meshes):
     for i, m in enumerate(meshes):
-        exportName = "C:\\Users\\Scott\\Desktop\\1\\" + fileName + "_" + str(count).zfill(3)
+        exportName = "C:\\Users\\Scott\\Desktop\\OUTPUT\\" + fileName + "_" + str(count).zfill(3)
     
         if len(meshes) > 0:
             rs.SelectObject(m)
