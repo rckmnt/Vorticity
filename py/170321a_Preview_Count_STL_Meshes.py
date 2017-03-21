@@ -24,7 +24,10 @@ def main():
     print 'Total STLs to process -', how_many
     
     for k in range(6):
-        foldername = stls[j].split('\\')[-1][:-9]
+        
+        foldername = stls[k].split('\\')[-1][:-9]
+        print foldername
+        
         if os.path.exists(workingDir + '\\' + foldername):
             rs.WorkingFolder(workingDir + '\\' + foldername)
         else:
@@ -34,12 +37,12 @@ def main():
         
         for j in range(k,420,6):
             print j
-#            gh.SetSliderValue("dddfcfab-73b2-45df-b21c-927f512d0ca9", j)
-#            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170320_Sim1_joinmesh_8_print_csv")    
-#            
-#            filename = stls[j].split('\\')[-1][:-9]
-#            
-#            rs.Command("-ViewCaptureToFile " + filename + ".jpg W=3840 H=2160 S=1 _EnterEnd")
+            gh.SetSliderValue("dddfcfab-73b2-45df-b21c-927f512d0ca9", j)
+            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170320_Sim1_joinmesh_8_print_csv")    
+            
+            filename = stls[j].split('\\')[-1][:-9]
+            
+            rs.Command("-ViewCaptureToFile " + filename + ".jpg W=3840 H=2160 S=1 _EnterEnd")
 
     end = datetime.datetime.now()
     runtime = end - start
