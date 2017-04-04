@@ -1,5 +1,5 @@
 import rhinoscriptsyntax as rs
-import Rhino, time, datetime, os, copy 
+import Rhino, time, datetime, os, copy
 from os.path import isfile, join
 
 rs.EnableRedraw(False)
@@ -18,5 +18,5 @@ def all_Filez_in(dir):
             allFilez.append(f_path)
             #print('\t- file %s (full path: %s)' % (filename, file_path))
     return allFilez
-    
+
 print all_Filez_in(thin_STLs)
