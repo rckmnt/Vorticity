@@ -5,8 +5,6 @@ from os.path import isfile, join
 gh = Rhino.RhinoApp.GetPlugInObject("Grasshopper")
 
 
-
-
 def main():
     rs.EnableRedraw(True)
     
@@ -40,7 +38,7 @@ def main():
         for j in range(k,420,6):
             print j
             gh.SetSliderValue("dddfcfab-73b2-45df-b21c-927f512d0ca9", j)
-            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170320_Sim1_joinmesh_8_print_csv")    
+            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170403_Sim1_Vorticity_joinmesh9")    
             
             filename = stls[j].split('\\')[-1][:-9]
             

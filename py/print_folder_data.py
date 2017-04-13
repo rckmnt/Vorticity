@@ -2,7 +2,7 @@ import os, csv
 
 
 desktop = r'C:\Users\Scott\Desktop'
-walk_dir = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_0\FBXs'
+walk_dir = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\FBXs'
 
 #print('walk_dir = ' + walk_dir)
 #print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -32,14 +32,12 @@ def csv_writer(data, path):
         for line in data:
             writer.writerow(line)
 
-test= [['a','b','c'],['a','b','c'],['a','b','c'],['aasd','sdsb','sd']]
-
-outfile = desktop + '\dataout.csv'
+outfile = desktop + '\sim1_dataout.csv'
 
 with open(outfile, "wb", buffering=-1) as csv_file:
     writer = csv.writer(csv_file)
     for line in print_folder_data(walk_dir):
        writer.writerow(line)
 
-
+print 'done'
 #csv_writer(print_folder_data(walk_dir), csv)
