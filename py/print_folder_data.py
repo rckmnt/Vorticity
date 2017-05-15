@@ -2,7 +2,8 @@ import os, csv
 
 
 desktop = r'C:\Users\Scott\Desktop'
-walk_dir = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\FBXs'
+#walk_dir = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\FBXs'
+walk_dir = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\Thin_STLs'
 
 #print('walk_dir = ' + walk_dir)
 #print('walk_dir (absolute) = ' + os.path.abspath(walk_dir))
@@ -32,7 +33,7 @@ def csv_writer(data, path):
         for line in data:
             writer.writerow(line)
 
-outfile = desktop + '\sim1_dataout.csv'
+outfile = desktop + '\sim1_reduced_dataout.csv'
 
 with open(outfile, "wb", buffering=-1) as csv_file:
     writer = csv.writer(csv_file)
