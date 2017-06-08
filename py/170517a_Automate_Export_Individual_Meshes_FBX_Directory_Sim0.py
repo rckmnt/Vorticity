@@ -9,21 +9,21 @@ def main():
     rs.EnableRedraw(False)
     
     # Directory to Export Meshes to
-    workingDir = rs.BrowseForFolder(r"C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\FBXs", "Pick a folder to save your files in")
+    workingDir = rs.BrowseForFolder(r"C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_0\FBXs", "Pick a folder to save your files in")
     rs.WorkingFolder(workingDir)
     
     start = datetime.datetime.now()
     print start
     
     # Walk all STLs in Dir and get names
-    thin_STLs = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_1\Thin_STLs'
+    thin_STLs = r'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Sim_0\Thin_STLs'
 
     stls = nbi.all_files_in(thin_STLs)
 
     how_many = len(stls)
     print 'Total STLs to process -', how_many
     
-    for j in range(0, 420, 1):
+    for j in range(0, 420, 100):
     
         gh.SetSliderValue("dddfcfab-73b2-45df-b21c-927f512d0ca9", j)
     
@@ -44,12 +44,12 @@ def main():
         
         # Find out how many meshes to export
         
-        for i in range(0,600,1):
+        for i in range(0,300,1):
             gh.SetSliderValue("c539ae3f-8a8b-412e-be3d-02c68af32a46",i)
-            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170517_Sim1_Vorticity_joinmesh_12.gh")
+            gh.RunSolver("C:\\Users\\Scott\\Dropbox\\NBI\\Vorticity\\ghx\\170517_Sim0_Vorticity_joinmesh_12.gh")
     
             # String for filename
-            strNum = str(num).zfill(3)
+            strNum = str(num).zfill(2)
             exportname = filename + '_' + strNum + ".fbx"
             print 'Exporting:', exportname
     
