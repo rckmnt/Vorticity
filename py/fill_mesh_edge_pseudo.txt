@@ -1,0 +1,22 @@
+
+for very file in files:
+
+    import mesh
+
+        sel all
+        if mesh is CLOSED:
+            sel all
+            delete
+        else:
+            ALLOW USER CONTROL
+
+            Fill mesh edge
+
+            CONT
+
+            if CLOSED
+                export as SAME NAME
+
+            else
+
+                Fill Mesh Edge
