@@ -1,4 +1,7 @@
 
+
+C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\samples_to_test_capping
+
 for very file in files:
 
     import mesh
