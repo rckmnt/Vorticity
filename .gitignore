@@ -11,6 +11,13 @@ ehthumbs.db
 *.obj
 *.3dmbak
 
+# Image and Video Files
+*.mp4
+*.gif
+*.png
+*.jpeg
+*.jpg
+
 # Folder config file
 Desktop.ini
 
