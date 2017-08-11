@@ -5,6 +5,33 @@ import Rhino, time, datetime, os, gc
 from os.path import isfile, join
 import time
 
+def pseudo_centroid(mesh):
+    
+    """
+    Returns a pseudo-centroid, an average of all mesh Face centroid
+    """
+
+    face_ctrs = []
+    totalFac = mesh.Faces.Count
+
+    x = mesh.Faces.GetFaceCenter(0).X
+    y = mesh.Faces.GetFaceCenter(0).Y
+    z = mesh.Faces.GetFaceCenter(0).Z
+    reduction = 1
+
+    for i in range(0, mesh.Faces.Count, reduction):       # ONLY AVERAGING EVERY 10
+        face_ctrs.append(mesh.Faces.GetFaceCenter(i))
+        center = mesh.Faces.GetFaceCenter(i)
+        x += center.X
+        y += center.Y
+        z += center.Z
+
+    average = rg.Point3d(x/totalFac * reduction, y/totalFac * reduction, z/totalFac * reduction)
+    #print "# faces ", mesh.Faces.Count
+    
+    return average
+
+
 def main():
     rs.EnableRedraw(False)
     
@@ -16,9 +43,12 @@ def main():
         fout.write("File, Volume, Centroid, Is Open?, Is Non-Manifold?, Bbox corners, , , , , , , , Face count, Vertex count, \n")
 
         for roots, subds, files in os.walk(walkdir):
-            
-            
+
             for f in files:
+
+#                if int(f[2:4]) < 30:
+#                    print f
+
                 path = os.path.join(roots, f)
                 
                 command = '-_Import ' + path
@@ -33,7 +63,7 @@ def main():
                 vol = rg.VolumeMassProperties.Compute(thing).Volume
                 if vol < 0:
                     vol = abs(vol)
-                cent = rg.VolumeMassProperties.Compute(thing).Centroid
+                cent = pseudo_centroid(thing)
                 bbox = rs.BoundingBox(thing)
                 #bboxvol = rg.VolumeMassProperties.Compute(bbox).Volume
                 faces = thing.Faces.Count
@@ -56,6 +86,7 @@ def main():
                 print "     ", "V:", vertices
                 print "     ", "Is Open", isopen
                 """
+
                 RIV_data = [f, vol, cent, bbox[0:7], faces, vertices]
 
                 fout.write(f)
