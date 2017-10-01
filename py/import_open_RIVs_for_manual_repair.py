@@ -1,22 +1,30 @@
 import rhinoscriptsyntax as rs
+import os
+
+"""
+Rhino Python utility
+    Used for importing the FBXs into Rhino with Object Name from filename
+"""
 
 # Add FBX folder root path here:
-fbxs = "C:\Users\Scott\Desktop\closed_fbxs"
+fbxs = "C:\Users\Scott\Desktop\sim1_openRIV_sampleset\FBXs"
 
+def all_Filez_in(dir):
+    allFilez = []
+    for roots, subds, filez in os.walk(dir):
+        for fname in filez:
+            f_path = os.path.join(roots, fname)
+            allFilez.append(f_path)
+            #print('\t- file %s (full path: %s)' % (filename, file_path))
+    return allFilez
 
-rivs = rs.Command("_SelMesh", True)
+riv_paths = all_Filez_in(fbxs)
 
-print rivs
-"""
-for r in rivs:
-    rs.Command('_SelNone', True)
-    name = rs.ObjectName(r, name)
-
-    rs.Command('_SelLast', True)
+for r in riv_paths:
+    name = r.split('\\')[-1]
+    print name
+    rs.Command("_Import " + r + " ")
+    rs.Command("_SelLast ")
     thing = rs.SelectedObjects()
-    name = r.split("\\")
-    name = name[-1]
     rs.ObjectName(thing, name)
-    rs.Command('_SelNone', True)
-"""
-
+    rs.Command("_SelNone ")

@@ -23,7 +23,7 @@ def main():
     how_many = len(stls)
     print 'Total STLs to process -', how_many
     
-    for j in range(2, 420, 1):
+    for j in range(228, 420, 1):
     
         gh.SetSliderValue("dddfcfab-73b2-45df-b21c-927f512d0ca9", j)
     

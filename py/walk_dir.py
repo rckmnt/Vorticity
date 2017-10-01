@@ -1,14 +1,11 @@
-import rhinoscriptsyntax as rs
-import Rhino, time, datetime, os, copy
+import os
 from os.path import isfile, join
-
-rs.EnableRedraw(False)
 
 
 # Walk all STLs in Dir and get names
-thin_STLs = 'C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Thin_STLs'
+thin_STLs = 'C:\Users\Scott\Desktop\Sim1_FBXs_170905'#C:\Users\Scott\Dropbox\NBI\Vorticity\OUTPUT\Thin_STLs'
 
-print os.walk(thin_STLs)
+#print os.walk(thin_STLs)
 
 def all_Filez_in(dir):
     allFilez = []
@@ -19,25 +16,6 @@ def all_Filez_in(dir):
             #print('\t- file %s (full path: %s)' % (filename, file_path))
     return allFilez
 
-print all_Filez_in(thin_STLs)
+for a in all_Filez_in(thin_STLs):
+    print a.split('\\')[-1]#, '\n'
 
-
-
-"0_33_0",
-"0_33_1",
-"0_33_2",
-"0_33_3",
-"0_33_4",
-"0_33_5",
-"0_34_0",
-"0_34_1",
-"0_34_2",
-"0_34_3",
-"0_34_4",
-"0_34_5",
-"0_35_0",
-"0_35_1",
-"0_35_2",
-"0_35_3",
-"0_35_4",
-"0_35_5",
