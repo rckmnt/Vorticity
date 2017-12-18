@@ -7,7 +7,8 @@ Rhino Python utility
 """
 
 # Add FBX folder root path here:
-fbxs = "C:\Users\Scott\Desktop\sim1_openRIV_sampleset\FBXs"
+#fbxs = "C:\Users\Scott\Desktop\sim1_openRIV_sampleset\FBXs"
+fbxs = r"C:\Users\Scott\Desktop\Sim0_FBXs_170716\0_54_5"
 
 def all_Filez_in(dir):
     allFilez = []

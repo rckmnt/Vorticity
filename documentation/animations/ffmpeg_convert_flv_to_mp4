@@ -1,0 +1,1 @@
+ffmpeg -i input.flv -c copy -copyts output.mp4
