@@ -18,6 +18,9 @@ ehthumbs.db
 *.jpeg
 *.jpg
 
+*.flv
+*.zip
+
 # Folder config file
 Desktop.ini
 
